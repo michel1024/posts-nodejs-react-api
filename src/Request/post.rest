@@ -1,0 +1,25 @@
+GET http://localhost:3001/api/posts HTTP/1.1
+
+###
+
+POST http://localhost:3001/api/posts HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "JavaScript desde cero",
+    "body": "Curso de JavaScript #frontend #developer"
+}
+
+###
+
+PATCH  http://localhost:3001/api/posts/6521e1a51d012aded402448c HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Curso de Python <Senior Developer>",
+    "body": "Lorem Ipsom"
+}
+
+###
+
+DELETE http://localhost:3001/api/posts/651a18468b336e1da8372d95 HTTP/1.1

@@ -1,0 +1,39 @@
+GET http://localhost:3001/api/users HTTP/1.1
+
+###
+
+POST http://localhost:3001/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Diego",
+    "user": "DV",
+    "email": "dv@hotmail.com",
+    "password": "321654"
+}
+
+### Login
+
+POST http://localhost:3001/api/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "dv@hotmail.com",
+    "password": "321654"
+}
+
+###
+
+PATCH  http://localhost:3001/api/users/65187eca0a9778d134f36cd7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Erick",
+    "user": "egarcia",
+    "email": "egarcia@hotmail.com",
+    "password": "@lucy123"
+}
+
+###
+
+DELETE  http://localhost:3001/api/users/65187dfa4bb20c0102fd0ee3 HTTP/1.1
